@@ -1,0 +1,7 @@
+﻿../../story/whatisnext.htm?../experiments/Exp_7/      What is Next?
+
+W07E01.html     Fetching data from JSON arrays
+W07E02.html     Fetching data from JSON file
+W07E03.html     Fetching data from Flickr API
+W07E04.html     Fetching data from Wikipedia API
+

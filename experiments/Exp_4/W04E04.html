@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns>
+<head>
+<title>W04E04</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../../javascript/4_4.js"></script>
+<h1><center>Loading content from a file using Ajax</h1>
+</head>
+<body>
+<div>
+<p>
+The textfiles 1.txt has text in it.<br>
+Instead of static content, AJAX allows fetching of data from files into the webpage which makes it easier to users who don't know to code in HTML.<br/>
+This allows the developer to provide just the outline like this HTML file and the text can be changed by the user as per his specifications.<br/>
+If the file is deleted or not there, it automatically prints not found.
+</p>
+</div>
+<h3>Displaying content off a text file </h3>
+<div id="div1">
+<button id="button1" class="btn btn-primary">Message:</button>
+</div>
+
+<div class="alert">
+</div>
+
+<p>
+<h2>Code Snippet:</h2><br/>
+$(document).ready(function(){<br/>
+    $("button").click(function(){<br/>
+        $("#div1").load("1.txt", function(responseTxt, statusTxt, xhr){<br/>
+            if(statusTxt == "success")<br/>
+                alert("Content loaded successfully from file!");<br/>
+            if(statusTxt == "error")<br/>
+                alert("Error: " + xhr.status + ": " + xhr.statusText);<br/>
+        });<br/>
+    });<br/>
+});<br/>
+
+</p>
+</div>    
+<div>
+<p><h3>Source Code:</h3></p>
+<a href="../../fileview/Default.aspx?~/experiments/Exp_4/W04E04.html" target="_blank">HTML Code</a><br>
+<a href="../../fileview/Default.aspx?~/javascript/4_4.js" target="_blank">JS Code</a>
+</div>
+<div>
+<p><h3>References:</h3></p>
+<a href="http://www.w3schools.com/jquery/jquery_ajax_load.asp" target="_blank">W3Schools</a></div>	 
+</body>
+</html>

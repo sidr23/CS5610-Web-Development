@@ -1,0 +1,16 @@
+	var feed = data.feed;
+              var entries = feed.entry;
+	var html = ['<ol>'];
+            for (var i = 0; i < entries.length; i++)
+            {
+	var entry = entries[i];
+              var title = entry.volumeInfo.title.$t;
+	var authors = entry.volumeInfo.authors[0].$t;
+              var lnk = '<a> <img src = \"' + entry.volumeInfo.imageLinks.thumbnail + '"\></a>';
+	html.push('<li>', title, ', ', authors, ', ', lnk, '</li>');
+              
+            }
+	html.push('</ol>');
+            document.getElementById('myDiv').innerHTML = html.join('');
+        }
+http://www.w3schools.com/ajax/tryit.asp?filename=tryajax_first

@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>W07E01</title>
+<script language="javascript" >
+
+document.writeln("<h2>Creation of array object in javascript using JSON</h2>");
+
+var student = { "Details" : [ 
+      { "Name"  : "Siddharth Ramanathan", "Id" : 001711190 },
+      { "Name"  : "Jai Asher", "Id" : 001913585 }
+   ],                       
+   "Courses"  : [
+      { "Name"  : "Web Dev", "Number" : 5610 }, 
+      { "Name"  : "Net Sec", "Number" : 5700 }
+   ]    
+}    
+
+document.writeln("<h3>Here are two tables</h3>");
+
+var i = 0
+document.writeln("<table><tr>");
+document.writeln("<td>");
+document.writeln("<table border='1' width=500 >");
+document.writeln("<tr><td><b>Name</b></td>" + "<td><b>Id</b></td></tr>");
+   
+for(i=0;i<student.Details.length;i++)
+{	
+   document.writeln("<tr><td>" + student.Details[i].Name+"</td>" +"<td>"+  student.Details[i].Id +"</td></tr>");
+}
+
+document.writeln("</table>");
+document.writeln("</td></tr>");
+
+document.writeln("<table><tr>");
+document.writeln("<td>");
+document.writeln("<table border='1' width=500 >");
+document.writeln("<tr><td><b>Name</b></td>" + "<td><b>Number</b></td></tr>");
+
+for(i=0;i<student.Courses.length;i++)
+{
+document.writeln("<tr><td>" + student.Courses[i].Name+"</td>" +"<td>"+  student.Courses[i].Number +"</td></tr>");
+}
+document.writeln("</td></tr></table>");
+</script>
+</head>
+
+<body>
+
+<p>
+    This is a basic Table with values and information fetched from JSON array element<br />
+    I've used array elements and tables to display the information stored in the array.<br /> 
+</p>
+    <br />
+
+<p>
+        Code Snippet:<br />
+
+<p> for( i=0;i < student.Details.length;i++) </p>
+{
+document.writeln(student.Details[i].Name +  student.Details[i].Id);
+}
+
+<p> for( i=0;i < student.Courses.length;i++) </p>
+{
+document.writeln(student.Courses[i].Name +  student.Courses[i].Number);
+}
+</p>
+
+<footer>
+         <p><h3>Source Code:</h3><a href="../../fileview/Default.aspx?~/experiments/Exp_7/W07E01.html" target="_blank">HTML Code</a><br/>
+         <h3>References:</h3><a href="http://www.tutorialspoint.com/json/json_quick_guide.htm" target="_blank">Tutorials Point</a> <br />
+         <a href="http://www.w3schools.com/json/json_syntax.asp" target="_blank"> W3Schools </a> <br />
+</footer>
+</body>
+</html>

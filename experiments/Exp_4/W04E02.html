@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>W04E02</title>
+    <h1>Ajax to fetch scores</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript"> 
+        function test()
+        {
+            $.ajax({
+                url: "http://json-cricket.appspot.com/score.json",
+                dataType: "jsonp",
+                success: function (data) {
+                    $("#scores").empty();
+                    $.each(data, function (i, item) {
+                        $("#scores").append(item);
+                    });
+                }
+            });
+        }
+    </script>
+
+</head>
+<body>
+    <p>
+        Fetching live score from an API that has live cricket scores. This is done entirely using Javascript,Ajax and Jquery.<br/>
+        Click on the Live Score Button to retrieve scores. json-cricket appspot stores cricket scores in json<br/>
+    </p>
+    <div>
+        <h3>Code Snippet:</h3>
+        <p>
+            function test() {<br />
+            $.ajax({<br />
+            url: "http://json-cricket.appspot.com/score.json",<br />
+            dataType: "jsonp",<br />
+            success: function (data) {<br />
+            $("#scores").empty();<br />
+            $.each(data, function (i, item) {<br />
+            $("#scores").append(item);<br />
+            });<br />
+            }});<br />
+            }<br />
+        </p>
+    </div>
+    <p>Click to fetch Live Scores</p> <br/>
+    <form id="form1" runat="server">
+        <button id="tbn" onclick="Javascript:test();return false;">Live Score</button>
+        <div id="scores"></div>
+    </form>
+    <br />
+
+    <h4>View Source</h4>
+    <div>
+        <a href="../../fileview/Default.aspx?~/Experiments/Exp_4/W04E02.html" target="_blank">HTML Source Code</a><br />
+        <a href="../../fileview/Default.aspx?~/javascript/4_2.js" target="_blank">JS Source code</a>
+    </div>
+    <h4>References</h4>
+    <a href="https://www.youtube.com/watch?v=mErJ3HFWZHs" target="_blank">Prof Jose's Lecture</a><br />
+    <a href="http://ask.mybloggertricks.com/t/how-to-update-live-cricket-score-directly-to-the-blog/1745" target="_blank">My blogger tricks</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+function watch() {
+
+    var ytext = document.getElementById("ytext");
+
+$.ajax({
+    type: "GET";
+    url: "https://gdata.youtube.com/feeds/api/videos/" + videoID + "?v=2&alt=json",
+    dataType: "jsonp",
+    success: function(data) {
+    videoName = data.entry.title.$t;
+    $('#video_name').text(videoName);
+    }
+});

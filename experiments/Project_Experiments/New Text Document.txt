@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Hi</title>
+<script type="text/javascript">
+$('#ddgAPI').on('keyup', function(e) {
+
+  if (e.which === '13') {
+    $.ajax({
+      type: 'GET',
+      url: 'https://api.duckduckgo.com/',
+      data: { q: $(this).val(), format: 'json', pretty: 1 },
+      jsonpCallback: 'jsonp',
+      dataType: 'jsonp'
+    }).then(function (data) {
+      console.log(data);
+    });
+  }
+
+});
+</script>
+</head>
+<body>
+<input id="ddgAPI"><button>Search</button>
+<div id="output"></div>
+</body>
+</html> 

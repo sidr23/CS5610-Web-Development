@@ -1,0 +1,32 @@
+<html>
+<title>Testing</title>
+<head>
+    <center><h2>  Testing </h2></center>
+<link rel="stylesheet" type="text/css" href="../../css/documentation.css">
+</head>
+
+<body>
+    <div class="info">
+        <p>
+<h3>Tests Run</h3>
+1. Stress tests were run on the pages working on Google Books and NYTimes API.<br/>
+2. The NYTimes API has a limit of 8 calls/second and 5,000 calls per day. <br/>
+3. The Google Books API didn't show any signs of limitations. 
+</p>
+<p>
+ <h3>Testing via different locations</h3> :<br/>
+ - My friends-Sumedh Habbu and Arshiya Shaikh from the University of Mumbai tested on the functionalities of the site from Mumbai<br/>
+ - the key observations they made were that some browsers aren't compatible with the book news rss feeds. <br/>
+</p>
+
+<p>
+ <h3>Testing via various browsers</h3> :<br/>
+ - Compatible browsers- Safari, chrome,Firfox, Opera <br/>
+ - IE versions 8 and 9 weren't compatible with the javascript,especially on the homepage with images switching. <br/>
+      </p>
+
+<br />
+
+    </div>
+
+</body>

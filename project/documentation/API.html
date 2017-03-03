@@ -1,0 +1,60 @@
+<html>
+<title>API Report</title>
+<head>
+    <center><h2>  API's Used </h2></center>
+<link rel="stylesheet" type="text/css" href="../../css/documentation.css">
+</head>
+
+<body>
+    <div class="info">
+<p>
+The major APIs that were used in the due course of this project were the Google Books API, NYTimes API and the Google Maps API.<br/>
+Apart from these APIs pr log's xml feed has also been taken for RSS News feeds for Book related news. This piece of code has been inspired from Prof Rasala's NASA RSS Feeds Experiments.
+
+<br />
+ <b>Google Books API</b><br/>
+ The application retrieves Book information for its users based on the search input. Using JSON data from the server, book volume info and links to preview/buy the book are provided to the user.
+<br />
+The main advantage of using this API to other APIs is that the Google API is free,easily accessible, well documented. It has ample data that can be fetched in JSON or XML.
+ I chose JSON as I had more confidence in it from Prof Rasala's in class demonstrations using JSON Data.
+
+<br/> <b>NYTimes Bestsellers API</b><br/>
+ The application retrieves bestseller information from a list of categories. This again is JSON data and there is an option for buying books from Amazon with a URL directing the user.
+<br />
+The NYTimes API is vast in data and provides decent results. The problem is that it its documentation is too verbose due to which technical glitches were tough to comprehend and took a lot of time fixing them.
+It is partly because of this that I haven't done justice to the look of the page aprt from making the table fluid responsive. 
+<br/>
+<b>Nytimes API requires api-key for authentication</b>. I have used Prof Rasala's getkey utility and simple proxy to fetch data from this API.<br/>
+
+<br/> <b>Harper Collins OpenBook API</b><br/>
+ The application retrieves book event information occuring in each state of the US. The Harper Collins API provides information of such future events.
+<br />
+The Harper Collins API provides required results and can be filtered easily. The information that it provides can be rendered easily and used for searching events nearby.
+The only shortcoming of this API is that it takes 15seconds for retrieving required information. The API limit is 4 Calls per second and 7,000 Calls per day.
+<br/>
+<b>Harper Collins API also requires api-key for authentication</b>. Used Prof Rasala's getkey utility and simple proxy to fetch data from this API. </b><br/>
+<br/>
+
+ <b>PRLog News Feed</b><br/>
+ The application retrieves Book News from the press distribution log's free xml news feed for book related news in the USA. Links are provided to read the entire news articles on the e-newspaper site.
+<br />
+
+ <b>Google Maps API</b><br/>
+ A trivial though necessary case of embedding the maps with the Northeastern University's address and developer's contact information.<br/> 
+
+<br />
+
+<b> Technologies used </b> <br/>
+HTML<br/>
+CSS <br/>
+Javascript <br/>
+JSON <br/>
+AJAX <br/>
+JQuery <br/>
+ASPX <br/>
+       </p>
+        
+
+    </div>
+
+</body>

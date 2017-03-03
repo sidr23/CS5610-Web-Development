@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<h2> Fetching images using flicker API </h2>
+<title>W07E03</title>
+<style>
+img 
+{
+height: 250px;
+width: 300px;
+float: left;
+}
+
+footer{
+position:absolute;
+left:0%;
+bottom:-60%;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+    <p>
+        This is a site with 8 pictures fetched from FlickrAPI using JSON and AJAX<br />
+        I've used a function that searches Flickr and fetches images of Northeastern University to display the pictures stored in the website.<br />
+    </p>
+    <br />
+
+    <p>
+        <b>Code Snippet:</b><br />
+    <p>
+        (function () {<br />
+        var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";<br />
+        $.getJSON(flickerAPI,<br />
+        {<br />
+        tags: "northeastern university",<br />
+        tagmode: "any",<br />
+        format: "json"<br />
+        })<br />
+    </p>
+
+  <div id="images"></div>
+<br/>
+ <script src="../../javascript/7_3.js"> </script>
+<br/>
+<footer class="footer">
+<p><h3>Source Code:</h3><a href="../../fileview/Default.aspx?~/experiments/Exp_7/W07E03.html" target="_blank">HTML Code</a><br/>
+<a href="../../fileview/Default.aspx?~/javascript/7_3.js" target="_blank">JS Source Code</a><br/>
+<h3>References:</h3><a href="http://api.jquery.com/?s=json" target="_blank">JQuery JSON</a> <br />
+</footer>
+</body>
+</html>

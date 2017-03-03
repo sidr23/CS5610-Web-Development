@@ -1,0 +1,6 @@
+﻿../../story/whatisnext.htm?../experiments/Exp_4/      What is Next?
+
+W04E01.html     Magnify image using JQuery
+W04E02.html     Embedding Web Api using Ajax
+W04E03.html     Auto complete feature
+W04E04.html     Loading text from file using Ajax

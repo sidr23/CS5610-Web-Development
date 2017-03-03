@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Html 5.0 Video Form using Bootstrap</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <center>
+                Experiment 1.1 - Login Form and new elements of Html 5.0 
+            </center>
+        </h1>
+    </header>
+    <form role="form" oninput="slidedValue.value=parseInt(slider.value)">
+        <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input type="text" class="form-control" placeholder="First Name" autofocus required id="firstname">
+        </div>
+
+        <div class="form-group">
+            <label for="username">Last Name:</label>
+            <input type="text" class="form-control" placeholder="Last Name" autofocus required id="lastname">
+        </div>
+
+        <div class="form-group">
+            <label for="street">Street Address:   </label>
+            <input type="text" class="form-control" placeholder="# xyz St" autofocus required id="Streetadd">
+        </div>
+
+        <div class="form-group">
+            <label for="zipcode">Zip Code:  </label>
+            <input type="text" pattern="[0-9]{5}" required maxlength="5" id="zipcode" name="zipcode" placeholder="02115" />
+        </div>
+
+        <div class="form-group">
+            <label for="City">City:</label>
+            <input type="text" class="form-control" placeholder="Boston" autofocus required id="City">
+        </div>
+
+        <div class="form-group">
+            <label for="State">Select State:</label>
+            <select class="form-control" id="state">
+                <option>MA</option>
+                <option>NY</option>
+                <option>OH</option>
+                <option>NH</option>
+                <option>OR</option>
+                <option>AL</option>
+                <option>MO</option>
+                <option>NY</option>
+                <option>BA</option>
+                <option>NJ</option>
+                <option>AR</option>
+                <option>LA</option>
+                <option>Other/NA</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="Other">If Other:</label>
+            <input type="text" class="form-control" id="Other-State" placeholder="TX">
+        </div>
+
+        <div class="form-group">
+            <label for="Country">Enter Country:</label>
+            <input type="text" id="Country" list="Countries">
+            <datalist id="Countries">
+                <option value="USA">
+                <option value="UK">
+                <option value="IND">
+                <option value="RSA">
+                <option value="SL">
+                <option value="UAE">
+                <option value="OTHER">
+            </datalist>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone No:  </label>
+                <input type="text" pattern="[0-9]{10}" required maxlength="10" id="phone" name="phone" placeholder="0123456789" />
+            </div>
+
+            <div class="form-group">
+                <label for="phonetype">PhoneType</label>
+                <label><input type="radio" name="phonetype" value="home" />Home</label>
+                <label><input type="radio" name="phonetype" value="cell" />Cell</label>
+                <label><input type="radio" name="phonetype" value="work" />Work</label>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Id:  </label>
+                <input type="email" autocomplete="off" required id="email_id" name="email_id" placeholder="dskhask@jhksdkja.com" />
+            </div>
+
+            <span>Age 0</span>
+            <input type="range" id="slider" min="0" max="100" value="25" step="1" name="range" onchange="ChangeTheSliderValue()">100 =
+            <output id="slidedValue" name="slidedValue" for="slider"></output>
+
+            <div class="form-group">
+                <label for="comment">Feedback:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset Form</button>
+            </br>
+<h3>
+<a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/experiments/Exp_1/Form.html" target="_blank">
+Html Source Code
+</a>
+</h3>
+</div>
+            <h4>References</h4>
+            <a href="http://www.w3schools.com/html/html_examples.asp" target="_blank"> W3 Schools </a><br/>
+            <h4>Embedding Prof Jose's Video from Youtube</h4>
+            <iframe width="300" height="250"
+             src="https://www.youtube.com//embed/nHxv7ETkkcg"></iframe>
+            <br />
+
+</form>
+    
+</body>
+</html>

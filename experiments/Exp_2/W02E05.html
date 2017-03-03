@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W02E05</title>
+<link rel="stylesheet" type="text/css" href="../../css/2_5_1.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="../../javascript/2_5.js"></script>
+</head>
+
+<body>
+<nav>
+  <ul>
+    <li><a href="#">Week 0</a></li>
+    <li>
+      <a href="#">Week 1</a>
+      <ul class="sublevel">
+         <li><a href="http://net4.ccs.neu.edu/home/sidr/experiments/Exp_1/Form.html" target="_blank">Exp 1</a></li>
+        <li><a href="http://net4.ccs.neu.edu/home/sidr/experiments/Exp_1/CSSHover.html" target="_blank">Exp 2</a></li>
+        <li><a href="http://net4.ccs.neu.edu/home/sidr/experiments/Exp_1/IntrotoCSS2.html" target="_blank">Exp 3</a></li>
+        <li><a href="http://net4.ccs.neu.edu/home/sidr/experiments/Exp_1/IntrotoCSS3.html" target="_blank">Exp 4</a></li>
+        <li><a href="http://net4.ccs.neu.edu/home/sidr/experiments/Exp_1/JSIntro.html" target="_blank">Exp 5</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Week 2</a>
+      <ul class="sublevel">
+        <li><a href="http://net4.ccs.neu.edu/home/sidr/experiments/Exp_2/W02E01.html" target="_blank">Exp 1</a></li>
+        <li><a href="http://net4.ccs.neu.edu/home/sidr/experiments/Exp_2/W02E02.html" target="_blank">Exp 2</a></li>
+        <li><a href="http://net4.ccs.neu.edu/home/sidr/experiments/Exp_2/W02E03.html" target="_blank">Exp 3</a></li>
+        <li><a href="http://net4.ccs.neu.edu/home/sidr/experiments/Exp_2/W02E04.html" target="_blank">Exp 4</a></li>
+        <li><a href="http://net4.ccs.neu.edu/home/sidr/experiments/Exp_2/W02E05.html" target="_blank">Exp 5</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Week 3</a></li>
+    <li><a href="#">Week 4</a></li>
+    <li><a href="#">Week 5</a></li>
+  </ul>
+</nav>
+
+<div class="info">
+<p class="p4">
+<pre>
+<b><u>Dropdown Using JQuery and CSS</u></b>
+In this experiment, I have implemented the dropdown menu. 
+We need to hover over the menu and its submenus drop down
+Javascript code:
+$(function () 
+{
+$('nav li ul').hide().removeClass('sublevel');
+$('nav li').hover(function () {
+$('ul', this).stop().slideToggle(200);
+});
+});
+
+<h3>Source Code: <a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/experiments/Exp_2/W02E05.html" target="_blank">HTML SOURCE CODE</a>      <a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/javascript/2_5.js" target="_blank">JS SOURCE CODE</a> <a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/css/2_5_1.css" target="_blank">CSS SOURCE CODE</a></h3>
+<h3>References:  JavaScript and Jquery-Interactive front-end development by Jon Duckett (Textbook) </h3>
+
+</pre>
+        
+</p>
+</div>
+</body>
+</html>

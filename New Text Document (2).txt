@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<connectionStrings>
+    <remove name="LocalSqlServer" />
+    <add name="LocalSqlServer"
+     connectionString="Data Source=127.0.0.1;Initial Catalog=sidr;User ID=sidr;PWD=<?xml version="1.0" encoding="utf-8" ?>
+<connectionStrings>
+    <remove name="LocalSqlServer" />
+    <add name="LocalSqlServer"
+     connectionString="Data Source=127.0.0.1;Initial Catalog=sidr;User ID=rasala;PWD=7iKmGdcp;Persist Security Info=True"
+     providerName="System.Data.SqlClient" />
+    <add name="sidrCS"
+     connectionString="Data Source=127.0.0.1;Initial Catalog=sidr;UID=sidr;PWD=7iKmGdcp;Persist Security Info=True"
+     providerName="System.Data.SqlClient" />
+    <add name="pubsCS"
+     connectionString="Data Source=127.0.0.1;Initial Catalog=pubs;UID=sidr;PWD=7iKmGdcp;Persist Security Info=True"
+     providerName="System.Data.SqlClient" />
+    <add name="NorthwindCS"
+     connectionString="Data Source=127.0.0.1;Initial Catalog=Northwind;UID=sidr;PWD=7iKmGdcp;Persist Security Info=True"
+     providerName="System.Data.SqlClient" />
+    <add name="AdventureWorksCS"
+     connectionString="Data Source=127.0.0.1;Initial Catalog=AdventureWorks;UID=sidr;PWD=7iKmGdcp;Persist Security Info=True"
+     providerName="System.Data.SqlClient" />
+    <add name="AdventureWorksDWCS"
+     connectionString="Data Source=127.0.0.1;Initial Catalog=AdventureWorksDW;UID=sidr;PWD=7iKmGdcp;Persist Security Info=True"
+     providerName="System.Data.SqlClient" />
+</connectionStrings>;Persist Security Info=True"
+     providerName="System.Data.SqlClient" />
+    <add name="sidrCS"
+     connectionString="Data Source=127.0.0.1;Initial Catalog=sidr;UID=sidr;PWD=7iKmGdcp;Persist Security Info=True"
+     providerName="System.Data.SqlClient" />
+    <add name="pubsCS"
+     connectionString="Data Source=127.0.0.1;Initial Catalog=pubs;UID=sidr;PWD=7iKmGdcp;Persist Security Info=True"
+     providerName="System.Data.SqlClient" />
+    <add name="NorthwindCS"
+     connectionString="Data Source=127.0.0.1;Initial Catalog=Northwind;UID=sidr;PWD=7iKmGdcp;Persist Security Info=True"
+     providerName="System.Data.SqlClient" />
+    <add name="AdventureWorksCS"
+     connectionString="Data Source=127.0.0.1;Initial Catalog=AdventureWorks;UID=sidr;PWD=7iKmGdcp;Persist Security Info=True"
+     providerName="System.Data.SqlClient" />
+    <add name="AdventureWorksDWCS"
+     connectionString="Data Source=127.0.0.1;Initial Catalog=AdventureWorksDW;UID=sidr;PWD=7iKmGdcp;Persist Security Info=True"
+     providerName="System.Data.SqlClient" />
+</connectionStrings>

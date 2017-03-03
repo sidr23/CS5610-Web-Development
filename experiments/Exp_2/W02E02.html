@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>W02Exp02</title>
+<script src="../../javascript/2_2.js" type="text/javascript"></script>
+</head>
+<body>
+<div>
+<h1> Some basic Javascript operations using date,time and numbers </h1>
+
+<div>Show Date and Time on Button Click</div>
+<p>
+Click on the button to check the Date and Time!
+<button onclick="datefn()"> Date and Time (EST) </button>
+<p id="date-demo"> </p>	
+
+</p>
+<div>Show Greeting based on Time</div>
+<p>
+Depending on the time right now, a greeting would be displayed
+<button onclick="greet()">Show Greeting</button>
+</p>
+
+<div> This will multiply two given numbers. Click on the button to check it out</div>
+<p>
+<input type="text" id="a" placeholder="Enter 1st Number" />
+<input type="text" id="b" placeholder="Enter 2nd Number" />
+<button onclick="product()"> Product</button>	
+<p id="demo"></p>
+</p>
+</div>
+
+<p>
+On clicking this button an alert would be sounded. This is done using javascript alert box <button onclick="alertfn()"> Clicking this would produce an Alert </button>
+</p>
+
+<form name="form" method="get">
+<h1>
+Interest Calculation
+</h1>
+<pre>
+Enter principle amount: <input type=text name=principle size=25><br>
+Enter rate of interest:  <input type=text name=rate size=4><br>
+Enter time period (in years):   <input type=text name=time size=3><br>
+ <Input type="button" value="Calculate simple interest" onClick="simple()">
+Simple interest: <input type=text name=sinterest size=25><br>
+Amount after interest:<input type=text name=famount size=25><br>
+ <Input type="button" value="Calculate compound interest" onClick="compound()">
+compound interest: <input type=text name=cinterest size=25><br>
+Amount after interest:<input type=text name=cfamount size=25><br>
+<h3>Source Code: <br/>
+<a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/experiments/Exp_2/W02E02.html" target="_blank">HTML SOURCE CODE</a><br/>
+<a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/javascript/2_2.js" target="_blank">JS SOURCE CODE</a></h3><br/>
+<h3>References:
+JavaScript and Jquery-Interactive front-end development by Jon Duckett (Textbook) <br/>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>W04E01</title>
+    <link rel="stylesheet" type="text/css" href="../../css/4_1.css" media="screen" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/JavaScript" src="../../javascript/4_1.js"></script>
+</head>
+
+<body>
+<h1><center>Magnify image using CSS,JQuery</h1><br/>
+<p>
+Zooming an image by CSS,Jquery.<br/>
+</p>
+<p>
+This effect is usually seen in Apple's site and can be used in web pages to magnify details.<br />
+The factor of magnification in this image is very low because of the size and relative coordinates formula used. 
+</p>
+<p>
+Code Snippet: <br/>
+var rx = Math.round(mx/$(".small").width()*native_width - $(".large").width()/2)*-1;<br/>
+var ry = Math.round(my/$(".small").height()*native_height - $(".large").height()/2)*-1;<br/>
+var bgp = rx + "px " + ry + "px";<br/>
+var px = mx - $(".large").width()/2;<br/>
+var py = my - $(".large").height()/2;<br/>
+</p>
+<p>
+Hover mouse to magnify the image.
+</p>
+<div class="magnify">
+<div class="large"></div>
+<img class="small" src="image1.jpg" width="200"/>
+</div>
+<h3>Source Code: <br>
+<a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/experiments/Exp_4/W04E01.html" target="_blank">HTML CODE</a><br>
+<a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/javascript/4_1.js" target="_blank">JS SOURCE CODE</a><br>
+<a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/css/4_1.css" target="_blank">CSS SOURCE CODE</a></h3>
+<h3>References:<br>
+JavaScript and Jquery-Interactive front-end development by Jon Duckett (Textbook) <br>
+<a href="http://tutorialzine.com/2010/06/apple-like-retina-effect-jquery-css/" target=_blank>Tutorialzine</a>
+</body>
+</html>

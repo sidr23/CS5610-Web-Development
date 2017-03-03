@@ -1,0 +1,7 @@
+﻿../../story/whatisnext.htm?../experiments/Exp_6/      What is Next?
+
+W06E01.aspx     ASPX Login form returning Information
+W06E02.aspx     ASPX Button Controls
+W06E03.aspx     ASPX Addition Calculator
+W06E04.aspx     ASPX Basic Elements
+W06E05.aspx     ASPX DB Connection

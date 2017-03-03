@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>W03E05</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../../javascript/js/jquery.js"></script>
+    <script src="../../javascript/js/jquery-ui.js"></script>
+    <script src="../../javascript/3_5.js"></script>
+    <link rel="stylesheet" href="jquery-ui.css" /> 
+    
+<style>
+footer{
+position:absolute;
+left:0%;
+bottom:-40%;
+color:#000000;
+font-size:15px;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Accordion-Sortable elements using JQuery</h2>
+        <hr/>
+        <br/>
+        <div id="accordion">
+            <div class="group">
+                <h3>1. List item 1</h3>
+                <div>
+                    <p>This is the first item</p>
+                </div>
+            </div>
+            <div class="group">
+                <h3>2. List item 2</h3>
+                <div>
+                    <p> This is the second object</p>
+                </div>
+            </div>
+            <div class="group">
+                <h3>3. List Item3</h3>
+                <div>
+                    <p>This is the third item</p>
+                </div>
+            </div>
+            <div class="group">
+                <h3>4. List Item4</h3>
+                <div>
+                    <p>This is the fourth item</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <p>
+           Accordian sortable is a common feature in JQuery and has been provided by JQuery.com as an open source tool. It can be freely downloaded and applied to produce such effects!
+	Followed the video and downloaded the JS file from JQuery.com. Easily applied the styles that were previously defined in it. Mouse Click over the list items to see the hidden submenus!
+        </p>
+        <div>
+            <h5><u>JQuery Code Snippet: </u></h5>
+            <p>
+                $(function () <br/>
+                { <br />
+                $("#accordion") <br />
+                .accordion({<br />
+                header: "> div > h3"  <br />
+                })<br />
+                .sortable({<br />
+                axis: "y", <br />
+                handle: "h3", <br />
+                stop: function (event, ui) <br />
+                {<br />
+                $(this).accordion("refresh");<br />
+                }<br />
+                });<br />
+                });
+            </p>
+            <hr />
+        </div>
+        <footer class="footer">
+<h3>Source Code: <a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/experiments/Exp_3/W03E05.html" target="_blank">HTML SOURCE CODE</a>      <a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/javascript/3_5.js" target="_blank">JS SOURCE CODE</a> </h3>
+<h3>References:<br>
+<a href="http://jqueryui.com/accordion/" target="_blank">JQuery.com</a>
+</h3>
+</footer>
+</body>
+</html>

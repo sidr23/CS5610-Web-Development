@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>W03E03</title>
+
+    <link rel="stylesheet" href="../../css/3_3.css" />
+    <link rel="stylesheet" href="../../javascript/js/jquery-ui.css" />
+
+    <script src="../../javascript/js/jquery.js"></script>
+    <script src="../../javascript/js/jquery-ui.js"></script>
+    <script src="../../javascript/3_3.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Selecting a menu bar with Jquery
+        </h1>
+	<p>
+
+            Using JQuery this select menu was created. This JQuery menu renders a different effect when we select the objects.
+	Each item of the menu bar is treated as an object and when selected its properties change
+        
+	</p>
+    </div>
+
+
+        <div>
+            <h3>Select any of the below list items</h3>
+            <p></p>
+            <ol id="selectable">
+                <li>Week1</li>
+                <li>Week2</li>
+                <li>Week3</li>
+                <li>Week4</li>
+                <li>Week5</li>
+            </ol>
+        </div>
+<p>
+JS Code Snippet:
+$(function () {
+    $("#selectable").selectable();
+});
+</p>
+<footer class="footer">
+<h3>Source Code: <a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/experiments/Exp_3/W03E03.html" target="_blank">HTML SOURCE CODE</a>      <a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/javascript/3_3.js" target="_blank">JS SOURCE CODE</a> <a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/css/3_3.css" target="_blank">CSS SOURCE CODE</a></h3>
+<h3>References:<br>
+JavaScript and Jquery-Interactive front-end development by Jon Duckett (Textbook) <br>
+<a href="http://jqueryui.com/selectable/" target="_blank">Selectable- JQuery UI</a>
+</footer>
+</body>
+</html>

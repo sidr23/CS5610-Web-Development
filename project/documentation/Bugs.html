@@ -1,0 +1,28 @@
+<html>
+<title>Bugs and Limitations</title>
+<head>
+    <center><h2>  Bugs and Limitations </h2></center>
+<link rel="stylesheet" type="text/css" href="../../css/documentation.css">
+</head>
+
+<body>
+    <div class="info">
+        <p>
+<h3>Bugs</h3>
+1. NYTimes API call for individual fields where there exists no data for that particular variable returns undefined.<br/>
+2. In case of no result for a particular field from the google books api, the output has undefined or null instead of a notification for it. <br/>
+2. In certain searches if the image thumbnail isn't present in the google books api, console gives an error: thumbnail of undefined. This bug is yet to be handled.  <br/>
+</p>
+<p>
+ <h3>Difficulties faced</h3>
+ 1. The documentation of the NYTimes API mentions that calls can be made in a particular manner, but the calls fail. 
+     The syntax for getting the correct calls was exhausting to find and it kept returning no results and giving errors. 
+     Handled it by maintaing a false cache and the format for data as json instead of jsonp mentioned. <br />
+ 2. Saving the keys secretly was a big issue. 
+     But thanks to Prof Rasala's getkey utility, it has been a task that's accomplished fairly easily! <br/>
+      </p>
+<br />
+
+    </div>
+
+</body>

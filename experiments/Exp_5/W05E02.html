@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("GET","student_catalog.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML; 
+
+x=xmlDoc.getElementsByTagName("STUDENT");
+i=0;
+
+function displaySTUDENT()
+{
+name=(x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue);
+city=(x[i].getElementsByTagName("CITY")[0].childNodes[0].nodeValue);
+country=(x[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue);
+college=(x[i].getElementsByTagName("COLLEGE")[0].childNodes[0].nodeValue);
+age=(x[i].getElementsByTagName("AGE")[0].childNodes[0].nodeValue);
+txt="Name: " + name + "<br>City: " + city + "<br>Country:" + country + "<br> College:" + college + "<br>Age: "+ age;
+document.getElementById("showSTUDENT").innerHTML=txt;
+}
+
+</script>
+    <h1>jQuery to read and display xml data</h1>
+    <h3>Fetching data stored in XML file manually.</h3>
+    <hr />
+    <p>
+        This experiment demonstrates how data can be fetched from xml file that is stored by the user in the server. Here, the personal details are launched from student_catalog.xml that I've stored in the server.
+    </p>
+
+    <br />
+    <p>Code Snippet<br/>
+
+function displaySTUDENT()<br/>
+{<br/>
+name=(x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue);<br/>
+city=(x[i].getElementsByTagName("CITY")[0].childNodes[0].nodeValue);<br/>
+age=(x[i].getElementsByTagName("AGE")[0].childNodes[0].nodeValue);<br/>
+txt="Name: " + name + "<br>City: " + city + "<br>Age: "+ age;<br/>
+document.getElementById("showSTUDENT").innerHTML=txt;<br/>
+}<br/>
+
+</p>
+    <hr />
+    <p>
+</head>
+<body onload="displaySTUDENT()">
+<div id='showSTUDENT'></div>
+<footer>
+<p>
+<b>Source Code</b><br>
+<a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/experiments/Exp_5/W05E02.html" target="_blank"> HTML Code </a> <br>
+<a href="http://net4.ccs.neu.edu/home/sidr/fileview/Default.aspx?~/javascript/5_2.js" target="_blank"> JS Code </a> <br>
+
+<b>References</b><br>
+<a href="http://www.w3schools.com/xml/xml_to_html.asp" target="_blank"> W3Schools </a> <br>
+<a href="http://net4.ccs.neu.edu/home/rasala/story/index.htm?../experiments/nasa/story.txt" target="_blank"> NASA Story </a> <br>
+</p>
+</footer>
+</body>
+</html>

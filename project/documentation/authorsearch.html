@@ -1,0 +1,59 @@
+<html>
+<title>Author Search</title>
+<head>
+    <center><h2>  Author Search </h2></center>
+<link rel="stylesheet" type="text/css" href="../../css/documentation.css">
+</head>
+
+<body>
+    <div class="info">
+        <p>
+<b>Search on author name</b> consists of a textbox in which the user enters an authorname for searching about books from a particular author and the number of results one wishes to see. <br>
+<br>
+- The options vary from a maximum of 10 results to a maximum of 50 results. <br/>
+<br>
+- The main reason of keeping such varied limits is that for most of the books the number of results fetched is fewer than 50. 
+Apart from some books like Bible and other religious books with varied publications, most of them can be easily incorporated in the 50 result limit.<br/>
+<br>
+- On button click or enter command, that search value is rendered in a table which has title, author, publisher, published date, description, preview and info links. <br/> 
+<br>
+- This page is completely responsive and it turns into a vertical table for mobile phones and tablets.<br />
+<br>
+- The search results are returned from Google Books API that fetches data using JSON <br/>
+<br>
+- If a user enters garbage value or a book name that doesn't exist, then the user is prompted to search again with a more precise name. <br/> 
+<br />
+<img src="../../images/project/screenshots/Authorsearch2.jpg" height=400px width=800px/><br/>
+<br/>
+The above pic is a demonstration of valid data input by the user. 
+<br/> 
+</p>
+<p>
+<img src="../../images/project/screenshots/Authorsearch1.jpg" height=400px width=800px/><br/>
+The above pic is a demonstration of null/empty data input by the user. <br/>
+<br />
+<br>
+- There exist scenarios where the user input's a garbage value or a value for which there exist no results.
+<br>
+- These searches are handled using javascript, with the help of the predefined function data.hasOwnProperty(argument). <br/>
+<br>
+<img src="../../images/project/screenshots/authorsearch4.jpg" height=400px width=800px/><br/>
+<br/>
+The above pic is a demonstration of invalid data input by the user. 
+<br/> 
+<br>
+
+ <b>Further Work</b> : The page can be made more visually appealing by applying more css to the table. <br />
+       </p>
+        <p><b>Source Code</b><br/>
+            <a href="../../fileview/Default.aspx?~/project/AuthorSearch.aspx" target="_blank"> ASPX Code </a><br />
+            <a href="../../fileview/Default.aspx?~/javascript/project/authorsearch.js" target="_blank"> JS Code</a><br/>
+           <a href="../../fileview/Default.aspx?~/css/project/authorsearch.css" target="_blank"> CSS Code</a>
+        </p>
+        <p><b>References </b> <br/>
+         <a href="https://css-tricks.com/responsive-data-table-roundup/" target="_blank"> CSS Tricks </a>          
+<br />
+
+    </div>
+
+</body>

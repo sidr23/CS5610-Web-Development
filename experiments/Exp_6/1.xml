@@ -1,0 +1,12 @@
+<advertisements>
+<ad>
+<imageurl> 1.jpg </imageurl>
+<navigateurl> http://www.google.com </navigateurl>
+</ad>
+
+<ad>
+<imageurl> 2.jpg </imageurl>
+<navigateurl> http://www.facebook.com </navigateurl>
+</ad>
+
+</advertisements>

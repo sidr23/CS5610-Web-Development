@@ -1,0 +1,52 @@
+<html>
+<title>Book Events</title>
+<head>
+    <center><h2>  Book Events </h2></center>
+<link rel="stylesheet" type="text/css" href="../../css/documentation.css">
+</head>
+
+<body>
+    <div class="info">
+        <p>
+<b>Book Events</b> consists of a list of book events in the US, users can enter their state from the dropdown list for knowing about the latest book events. <br>
+<br>
+- If events exist in that state, then the user is notified with fields like author,book title, start and end dates of the event, local time, location, venue,city rendered in a table.  <br/>
+<br>
+- The main reason for using the tabular structure is that a lot of data can be showcased to the user.<br/>
+<br>
+- If no events exist in that particular state, the user is shown a message saying no events occuring in the state. Search for other nearby states.<br/> 
+<br>
+- This page is completely responsive and it turns into a vertical table for mobile phones and tablets.<br />
+<br>
+- The search results are returned from Harper Collins API that fetches data using JSON. It has a limit of 4 calls a second and 7000 calls a day. <br/>
+<br>
+- The shortcoming of the Harper Collins API is that searching for data takes 15seconds.This is a fairly long duration which demands for patience from potential users. <br/>
+<br>
+- The API requires key authentication that requires the apikey to be stored secretly. This is done using Prof Rasala's getkey utility. <br/>
+<br>
+- Cases where a user enters a state for which events don't exist, then the user is prompted to search again with a different state name. <br/> 
+<br />
+<img src="../../images/project/screenshots/bookevents1.jpg" height=400px width=800px/><br/>
+<br/>
+The above pic is a demonstration of events being present for a particular state as entered by the user. 
+<br/> 
+</p>
+<p>
+<img src="../../images/project/screenshots/bookevents2.jpg" height=400px width=800px/><br/>
+The above pic is a demonstration of no events for a particular state as entered by the user. <br/>
+<br />
+ <b>Further Work</b> : The page can be made more visually appealing by applying more css to the table. <br />
+       </p>
+        <p><b>Source Code</b><br/>
+            <a href="../../fileview/Default.aspx?~/project/BookEvents.aspx" target="_blank"> ASPX Code </a><br />
+            <a href="../../fileview/Default.aspx?~/javascript/project/bookevents.js" target="_blank"> JS Code</a><br/>
+           <a href="../../fileview/Default.aspx?~/css/project/bookevents.css" target="_blank"> CSS Code</a>
+        </p>
+        <p><b>References </b> <br/>
+         <a href="https://css-tricks.com/responsive-data-table-roundup/" target="_blank"> CSS Tricks </a> <br/>  
+         <a href="http://developer.harpercollins.com/docs" target="_blank"> Harper Collins API </a> <br/>        
+<br />
+
+    </div>
+
+</body>

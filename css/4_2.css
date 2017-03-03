@@ -1,0 +1,30 @@
+body 
+{
+    background-color:#9F000F;
+}
+
+
+h1
+{
+    text-align:center;
+    font-family:"Algerian";
+}
+
+
+h2
+{
+    font-family:"Calibri";
+    }
+
+
+#search
+{ 
+    width:400px;
+    background-color:#D1D0CE;
+    height:200px;
+    margin-left:30%;
+    padding:50px 50px 50px 50px; 
+    
+    
+    }
+    

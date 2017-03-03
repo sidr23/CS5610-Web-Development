@@ -1,0 +1,210 @@
+*
+{
+    margin:0px;
+    border:0px;
+}
+html
+{
+width:100%;
+height:100%;
+background-color:black;
+}
+body{
+width:100%;
+height:100%;
+background-color:black;
+}
+
+#menu1
+{
+width:100%;
+height:auto;
+float:left;
+}
+
+#logo
+{
+width:100%;
+height:auto;
+margin:auto;
+}
+
+img.display
+{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    height:100px;
+    width:100px;
+}
+
+#content
+{
+margin-top:10px;
+width:100%;
+height:auto;
+float:left;
+background-color: rgba(255,255, 255, 0.12);
+}
+
+.menu2
+{
+width:33%;
+height:auto;
+min-width:300px;
+float:left;
+background-color:white;
+margin:auto;
+}
+
+ul.master_navigation
+{
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+    margin: 0.5em 0;
+    padding: 0;
+    height:100%;
+}
+
+ul.master_navigation li
+{
+    display: inline-block;
+    text-decoration:none;
+    color:white;
+    padding: 0 0.5%; 
+    font-family: Verdana;
+    background-color: rgba(255, 255, 255, 0.3) ;
+    border-radius:5px;
+    font-size:0.9em;
+    padding: 5px;
+    height:100%;
+    margin-top:3px;
+}
+
+ul.master_navigation li a
+{
+    display: inline-block;
+    text-decoration:none;
+    font-family: Verdana;
+    font-size:0.9em;
+    color:white;
+    padding: 5px;
+    height:auto;
+    width:auto;
+}
+
+ul.master_navigation li a:hover
+{
+    color: red;
+}
+
+ul.master_navigation li:hover
+{
+    color: black;
+}
+
+#p1{
+    text-align:center;
+    display:block;
+    margin:auto;
+    width:auto;
+    color:white;
+    word-spacing:8px;
+}
+
+img.infoimg
+{
+    display:block;
+    height:auto;
+    width:100%;
+    float:left;
+    max-width:450px;
+}
+
+#info
+{
+    display:table-cell;
+    width:64%;
+    vertical-align:middle;
+    position:relative;
+    float:left;
+    text-align:justify;
+    color:white;
+    margin-left:1%;
+    margin-right:1%;
+    margin-top:1%;
+    height:auto;
+    font-size: 1.2em;
+}
+
+#experiments
+{
+    width:33%;
+    margin-top:30px;
+    float:left;
+    background-color:white;
+    height:100%;
+}
+
+#project
+{
+    width:33%;
+    margin-top:30px;
+    float:left;
+    background-color:white;
+    height:100%;
+}
+
+#documentation
+{
+    width:33%;
+    margin-top:30px;
+    float:left;
+    background-color:white;
+    height:100%;
+}
+
+#p2
+{
+    margin-top:auto;
+    margin-bottom:auto;
+    vertical-align:center;
+    text-align:center;
+    font-size:2.0em;
+    height:auto;
+}
+
+#p2:hover
+{
+    color:white;
+    cursor:default;
+}
+
+#documentation:hover
+{
+    background-color: rgba(255, 255, 255, 0.2) ;
+    cursor:default;
+}
+
+#project:hover
+{
+    background-color: rgba(255, 255, 255, 0.2) ;
+    cursor:default;
+}
+
+#experiments:hover
+{
+    background-color: rgba(255, 255, 255, 0.2) ;
+    cursor:default;
+}
+
+#menu2{
+    width:90%;
+    height:auto;
+    margin-right:auto;
+    margin-left:auto;
+    margin:auto;
+    background-color:red;   
+}

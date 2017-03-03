@@ -1,0 +1,7 @@
+﻿../../story/whatisnext.htm?../experiments/Exp_2/      What is Next?
+
+W02E01.html     JavaScript Form Validation
+W02E02.html     Some basic Javascript operations using date,time and numbers
+W02E03.html     Map Using JavaScript
+W02E04.html     Show and Hide Image
+W02E05.html     JQuery dropdown menu

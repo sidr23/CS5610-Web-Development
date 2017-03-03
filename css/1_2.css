@@ -1,0 +1,79 @@
+div.transbox {
+            top: 25%;
+            left: 25%;
+            position: absolute;
+            width: 50%;
+            height: 6%;
+            background-color: #708090;
+            border: 1px solid black;
+            opacity: 0.5;
+        }
+
+        p.p2:hover, p.p2:active {
+            color: red;
+        }
+
+        p.p1:hover, p.p1:active {
+            font-size: 150%;
+        }
+
+        p.p4:hover, p.p4:active {
+            background: red;
+        }
+
+        p.p3:hover, p.p3:active {
+            font-family: Tahoma;
+        }
+
+        p.p6:visited, p.p6:link {
+            text-decoration: none;
+        }
+
+        p.p5:hover, p.p5:active {
+            text-decoration: underline;
+        }
+
+        div {
+            -webkit-animation: animate 15s;
+        }
+
+        @-webkit-keyframes animate {
+            0% {
+                background: yellow;
+            }
+
+            33% {
+                background: green;
+            }
+
+
+            66% {
+                background: blue;
+            }
+
+            100% {
+                background: grey;
+            }
+        }
+
+        img.img1 {
+            top: 39%;
+            left: 25%;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            border: 1px solid black;
+        }
+
+            img.img1:hover {
+                height: 25%;
+                width: 25%;
+            }
+
+            #footer{
+                position:absolute;
+                left:0%;
+                bottom:0%;
+                color:#000000;
+                font-size:15px;
+            }

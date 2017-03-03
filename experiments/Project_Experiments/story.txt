@@ -1,0 +1,7 @@
+﻿../../story/whatisnext.htm?../experiments/Project_Experiments/     What is Next?
+
+P1.html    RSS feed Poem of the Day
+P3.aspx	 GoogleBooks for BookSearch
+P6.aspx   GoogleBooks for Search by Author
+P4.aspx   NYTimes API for BestSellers
+P9.aspx   Harper Collins API for Book Events

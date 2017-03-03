@@ -1,0 +1,22 @@
+.info
+    {
+    margin-left:10%;
+    width: 80%;
+    border:1px solid #69310E;
+    padding: 1%;
+    float: left;
+    height:auto;
+    max-height: 90%;
+    background-color:lightblue;
+    display: inline-block;
+    overflow:auto;
+    zoom: 1;
+    display: inline;
+    }
+body
+{
+    background-color:darkblue;
+}
+h2{
+    color:white;
+}

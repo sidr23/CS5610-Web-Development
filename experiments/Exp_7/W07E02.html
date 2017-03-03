@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+<script type="application/javascript">
+function CourseDetails()
+{
+   var data_file = "1.js";
+   var http_request = new XMLHttpRequest();
+   try
+   {
+      http_request = new XMLHttpRequest();
+   }
+   catch (e)
+      {
+      try{
+         http_request = new ActiveXObject("Msxml2.XMLHTTP");
+      }catch (e) {
+         try{
+            http_request = new ActiveXObject("Microsoft.XMLHTTP");
+         }catch (e){
+            alert("This file cannot be loaded on the browser. Please switch the browser");
+            return false;
+         }
+      }
+   }
+   http_request.onreadystatechange  = function(){
+      if (http_request.readyState == 4  )
+      {
+        var jsonObj = JSON.parse(http_request.responseText);
+        document.getElementById("Name").innerHTML =  jsonObj.name;
+        document.getElementById("Course").innerHTML = jsonObj.course;
+      }
+   }
+   http_request.open("GET", data_file, true);
+   http_request.send();
+}
+</script>
+<title>W07E02</title>
+</head>
+<body>
+<h1>Updating data from JSON file using AJAX</h1>
+<p>
+In this experiment, data is dynamically updated from JSON file stored on the server. On clicking the next course command the content switches from JSON file.<br/>
+This is similar to fetching data from XML file, but JSON files offer some differences.<br/>
+</p>
+<p>
+Code Snippet:<br/>
+if (http_request.readyState == 4  ) <br/>
+      {<br/>
+        var jsonObj = JSON.parse(http_request.responseText);<br/>
+        document.getElementById("Name").innerHTML =  jsonObj.name;<br/>
+        document.getElementById("Course").innerHTML = jsonObj.course;<br/>
+      }<br/>
+   }<br/>
+   http_request.open("GET", data_file, true);<br/>
+   http_request.send();<br/>
+</p>
+<table class="src" border='1'>
+<tr><th>Name</th><th>Course</th></tr>
+<tr><td><div id="Name">Professor Baclawski</div></td>
+<td><div id="Course">DBMS</div></td></tr>
+</table>
+
+<div class="central">
+<button type="button" onclick="CourseDetails()">Next Course </button>
+
+<footer>
+         <p><h3>Source Code:</h3><a href="../../fileview/Default.aspx?~/experiments/Exp_7/W07E02.html" target="_blank">HTML Code</a><br/>
+	<a href="../../fileview/Default.aspx?~/experiments/Exp_7/1.js" target="_blank">JS Source Code</a><br/>
+         <h3>References:</h3><a href="http://www.tutorialspoint.com/json/json_quick_guide.htm" target="_blank">Tutorials Point</a> <br />
+         <a href="http://www.w3schools.com/json/json_syntax.asp" target="_blank"> W3Schools </a> <br />
+</footer>
+
+</body>
+</html>

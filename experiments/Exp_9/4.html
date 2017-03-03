@@ -1,0 +1,46 @@
+<html>
+<head>
+<script type="text/javascript">
+var query;
+
+function onclick()
+{
+var y="";
+var query=document.getElementById("searchResults").innerHTML;
+var obj = new XMLHttpRequest();
+obj.open("GET", "https://www.googleapis.com/books/v1/volumes?q=" + search + "&key=AIzaSyAsWD-gGsy3W4tRxc5Cwld_JR3W_yY2Fnw", false);
+obj.send(null);
+return obj.responseText;
+
+var data = eval("(" + jsonhttp.responseText + ")");
+                    
+            for (var i = 0; i < data.items.length; i++) {
+                y += '<div class="bookdisplay">';
+                y += '<b>Title:</b> <span>' + data.items[i].volumeInfo.title + '</span>';
+                y += '</br><b>Author:</b> <span>' + data.items[i].volumeInfo.authors[0] + '</span>';    
+                y += '</br><b>Publisher:</b> <span>' + data.items[i].volumeInfo.publisher + '</span>';
+                y += '</br><a><img src=' + data.items[i].volumeInfo.imageLinks.thumbnail + '></a>';
+                y += '</div>';
+                document.getElementById("searchResults").innerHTML = y;
+            }
+        }
+    }
+jsonhttp.open("GET", "https://www.googleapis.com/books/v1/volumes?q=" + search + "&key=AIzaSyAsWD-gGsy3W4tRxc5Cwld_JR3W_yY2Fnw", true);
+jsonhttp.send();
+
+</script>
+</head>
+
+<body>
+    <div>
+        <h1 class="header"> Search for books</h1>
+        <div>
+            <input type="text" id="query" placeholder="Enter coursename" />
+            <input type="submit" value="Search" class="button" onclick="search()">
+        </div>
+        <div id="searchResults">
+            </div>
+        
+    </div>
+</body>
+</html>
